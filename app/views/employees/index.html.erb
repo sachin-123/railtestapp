@@ -1,0 +1,17 @@
+<h1><%= @listHeading %></h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+	<th>Salary</th>
+  </tr>
+
+<% @employees.each do |employee| %>
+  <tr>
+    <td><%= employee.name %></td>   
+	<td><%= employee.salary %></td>   
+  </tr>
+<% end %>
+</table>
+
+

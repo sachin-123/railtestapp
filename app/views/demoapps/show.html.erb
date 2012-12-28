@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @demoapp.name %>
+</p>
+
+<p>
+  <b>Pass:</b>
+  <%= @demoapp.pass %>
+</p>
+
+
+<%= link_to 'Edit', edit_demoapp_path(@demoapp) %> |
+<%= link_to 'Back', demoapps_path %>

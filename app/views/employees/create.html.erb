@@ -1,0 +1,11 @@
+<h1><%= @listHeading %></h1>
+<%= form_for(@employee) do |f| %>
+<p>
+	<b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+<%= link_to 'Back', {:action => 'new'} %>
